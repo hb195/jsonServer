@@ -1,16 +1,539 @@
 {
-  "posts":[
+  "TathGatDetails": {
+    "address": "Plot no. 1234, Kirti Nagar, New Delhi - 110016",
+    "emailAddress": "tathgat@gmail.com",
+    "contactNumber": "9876543210"
+  },
+  "users": [
     {
-      "id" : 0,
-      "title": "First post!",
-      "content" : "My first content!"
+      "id": "admin",
+      "name": "Admin",
+      "email": "admin@gmail.com",
+      "contact": "1234",
+      "password": "password"
+    },
+    {
+      "id": "uploader",
+      "name": "Uploader",
+      "email": "uploader@gmail.com",
+      "contact": "1234",
+      "password": "password"
+    },
+    {
+      "id": "creator",
+      "name": "Creator",
+      "email": "creator@gmail.com",
+      "contact": "1234",
+      "password": "password"
+    },
+    {
+      "id": "accountant",
+      "name": "Accountant",
+      "email": "accountant@gmail.com",
+      "contact": "1234",
+      "password": "password"
+    },
+    {
+      "id": "user",
+      "name": "user",
+      "email": "user@gmail.com",
+      "contact": "1234",
+      "password": "password"
     }
   ],
-  "comments" : [
+  "currentUser": {
+    "email": "user@gmail.com",
+    "name": "User",
+    "referralCode": "user123",
+    "referralAmount": 100
+  },
+  "sendReferralEmail": {
+    "referralCode": "user123"
+  },
+  "sendReferralMessage": {
+    "referralCode": "user123"
+  },
+  "sendReferralWhatsappMessage": {
+    "referralCode": "user123"
+  },
+  "redeemReferralAmount": {
+    "referralCode": "user123",
+    "referralAmount": 100,
+    "accountNumber": "1234",
+    "accountHolderName": "abcd",
+    "IFSCCode": "sbin"
+  },
+  "sendQuery": {
+    "name": "Himanshu Bhargava",
+    "email": "himanshuiitd95@gmail.com",
+    "topic": "Subscription",
+    "message": "Message 2"
+  },
+  "courses": [
     {
-      "id": 0,
-      "content": "Wow such content!",
-      "username": "zero_cool"
+      "id": 1,
+      "title": ".Net Framework",
+      "description": "Everything you wanna know about .NET",
+      "imageUrl": "{require(\"../../assets/course-image-1.jpg\")}",
+      "subscribed": true,
+      "cost": 1000,
+      "discountPercentage": 10
+    },
+    {
+      "id": 2,
+      "title": "Angular",
+      "description": "Angular App building from scratch",
+      "imageUrl": "{require(\"../../assets/course-image-1.jpg\")}",
+      "subscribed": true,
+      "cost": 1000,
+      "discountCoupon": "10PERCENTOFF",
+      "subscriptionPeriod": 7,
+      "reviews": [
+        {
+          "id": "r1",
+          "title": "Best courses ever",
+          "reviewer": "Kanak Maheshwari",
+          "rating": 3.5
+        },
+        {
+          "id": "r2",
+          "title": "Nice learning techniques",
+          "reviewer": "Manu Sharma",
+          "rating": 5
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "React",
+      "description": "Everything you wanna know about React js",
+      "imageUrl": "{require(\"../../assets/course-image-1.jpg\")}",
+      "subscribed": false,
+      "cost": 1000,
+      "discountCoupon": "100PERCENTOFF",
+      "subscriptionPeriod": 7,
+      "reviews": [
+        {
+          "id": "r1",
+          "title": "Best courses ever",
+          "reviewer": "Kanak Maheshwari",
+          "rating": 3.5
+        },
+        {
+          "id": "r2",
+          "title": "Nice learning techniques",
+          "reviewer": "Manu Sharma",
+          "rating": 5
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Python",
+      "description": "Learn python from the best",
+      "imageUrl": "{require(\"../../assets/course-image-1.jpg\")}",
+      "subscribed": false,
+      "cost": 1000,
+      "discountCoupon": null,
+      "subscriptionPeriod": 7,
+      "reviews": [
+        {
+          "id": "r1",
+          "title": "Best courses ever",
+          "reviewer": "Kanak Maheshwari",
+          "rating": 3.5
+        },
+        {
+          "id": "r2",
+          "title": "Nice learning techniques",
+          "reviewer": "Manu Sharma",
+          "rating": 5
+        }
+      ]
+    },
+    {
+      "id": "Introduction to react",
+      "title": "Introduction to react",
+      "description": "Everything you wanna know about react",
+      "imageUrl": "https://picsum.photos/id/237/200/300",
+      "subscribed": true,
+      "cost": 1000,
+      "discountCoupon": "10PERCENTOFF",
+      "subscriptionPeriod": 30,
+      "content": [
+        {
+          "Introduction to react": [
+            {
+              "ReactJS Basics": "https://www.youtube.com/watch?v=JPT3bFIwJYA&list=PL55RiY5tL51oyA8euSROLjMFZbXaV7skS"
+            },
+            {
+              "Setting up project environment": "https://www.youtube.com/watch?v=mxK8b99iJTg"
+            }
+          ]
+        },
+        {
+          "Components in react": [
+            {
+              "First Component": "https://www.youtube.com/watch?v=ycstRj2i66k"
+            },
+            {
+              "Multiple Components": "https://www.youtube.com/watch?v=TlB_eWDSMt4"
+            },
+            {
+              "Dynamic Data": "https://www.youtube.com/watch?v=pKd0Rpw7O48"
+            }
+          ]
+        },
+        {
+          "More in react": [
+            {
+              "First Program": "https://www.youtube.com/watch?v=ycstRj2i66k"
+            },
+            {
+              "Redux & state": "https://www.youtube.com/watch?v=TlB_eWDSMt4"
+            },
+            {
+              "Some other data": "https://www.youtube.com/watch?v=pKd0Rpw7O48"
+            }
+          ]
+        },
+        {
+          "Dummy": [
+            {
+              "Dummy1": "https://www.youtube.com/watch?v=ycstRj2i66k"
+            },
+            {
+              "Dummy2": "https://www.youtube.com/watch?v=TlB_eWDSMt4"
+            },
+            {
+              "Dummy3": "https://www.youtube.com/watch?v=pKd0Rpw7O48"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "coupons": [
+    {
+      "id": "10PERCENTOFF",
+      "discountPercentage": 10
+    },
+    {
+      "id": "20PERCENTOFF",
+      "discountPercentage": 20
+    },
+    {
+      "id": "100PERCENTOFF",
+      "discountPercentage": 100
+    }
+  ],
+  "data": [
+    {
+      "id": 3,
+      "title": "React",
+      "description": "Everything you wanna know about React js",
+      "imageUrl": "{require(\"../../assets/course-image-1.jpg\")}",
+      "subscribed": false,
+      "cost": 1000,
+      "discountCoupon": "10PERCENTOFF",
+      "subscriptionPeriod": 7,
+      "reviews": [
+        {
+          "id": "r1",
+          "title": "Best courses ever",
+          "reviewer": "Kanak Maheshwari",
+          "rating": 3.5
+        },
+        {
+          "id": "r2",
+          "title": "Nice learning techniques",
+          "reviewer": "Manu Sharma",
+          "rating": 5
+        }
+      ]
+    }
+  ],
+  "courseContent": {
+    "1": {
+      "id": "video",
+      "content": {
+        "Introduction": {
+          "introduction to react": "https://www.youtube.com/Abssssk",
+          "Setting up project env": "https://www.youtube.com/Abssss2",
+          "Creating a project": "https://www.youtube.com/Abssss2",
+          "Wrap up": "https://www.youtube.com/Abssss2"
+        },
+        "Arrow Functions": {
+          "introduction to arrow functions": "https://www.youtube.com/Abssssk",
+          "Arrow functions vs traditional approach": "https://www.youtube.com/Abssssk",
+          "Wrap up": "https://www.youtube.com/Abssssk"
+        }
+      }
+    },
+    "2": {
+      "id": "video2",
+      "content": {
+        "Introduction": {
+          "introduction to angular": "https://www.youtube.com/Abssssk",
+          "Setting up project env": "https://www.youtube.com/Abssss2",
+          "Creating a project": "https://www.youtube.com/Abssss2",
+          "Wrap up": "https://www.youtube.com/Abssss2"
+        },
+        "Arrow Functions": {
+          "introduction to arrow functions": "https://www.youtube.com/Abssssk",
+          "Arrow functions vs traditional approach": "https://www.youtube.com/Abssssk",
+          "Wrap up": "https://www.youtube.com/Abssssk"
+        }
+      }
+    }
+  },
+  "quiz_list": [
+    {
+      "quizName": "HTML",
+      "tests": 2
+    },
+    {
+      "quizName": "CSS",
+      "tests": 1
+    },
+    {
+      "quizName": "REACT",
+      "tests": 3
+    }
+  ],
+  "quiz_info": [
+    {
+      "REACT_JAVASCRIPT_QUIZ": [
+        {
+          "Part 1": {
+            "quizTitle": "React Quiz Component Demo",
+            "timeAlloted": 30,
+            "quizSynopsis": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim",
+            "questions": [
+              {
+                "question": "How can you access the state of a component from inside of a member function?",
+                "questionType": "text",
+                "answerSelectionType": "single",
+                "answers": [
+                  "this.getState()",
+                  "this.prototype.stateValue",
+                  "this.state",
+                  "this.values"
+                ],
+                "correctAnswer": "3",
+                "messageForCorrectAnswer": "Correct answer. Good job.",
+                "messageForIncorrectAnswer": "Incorrect answer. Please try again.",
+                "explanation": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                "point": "20"
+              },
+              {
+                "question": "ReactJS is developed by _____?",
+                "questionType": "text",
+                "answerSelectionType": "single",
+                "answers": ["Google Engineers", "Facebook Engineers"],
+                "correctAnswer": "2",
+                "messageForCorrectAnswer": "Correct answer. Good job.",
+                "messageForIncorrectAnswer": "Incorrect answer. Please try again.",
+                "explanation": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                "point": "20"
+              },
+              {
+                "question": "ReactJS is an MVC based framework?",
+                "questionType": "text",
+                "answerSelectionType": "single",
+                "answers": ["True", "False"],
+                "correctAnswer": "2",
+                "messageForCorrectAnswer": "Correct answer. Good job.",
+                "messageForIncorrectAnswer": "Incorrect answer. Please try again.",
+                "explanation": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                "point": "10"
+              },
+              {
+                "question": "Which of the following concepts is/are key to ReactJS?",
+                "questionType": "text",
+                "answerSelectionType": "single",
+                "answers": [
+                  "Component-oriented design",
+                  "Event delegation model",
+                  "Both of the above"
+                ],
+                "correctAnswer": "3",
+                "messageForCorrectAnswer": "Correct answer. Good job.",
+                "messageForIncorrectAnswer": "Incorrect answer. Please try again.",
+                "explanation": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                "point": "30"
+              },
+              {
+                "question": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
+                "questionType": "photo",
+                "answerSelectionType": "single",
+                "answers": [
+                  "https://dummyimage.com/600x400/000/fff&text=A",
+                  "https://dummyimage.com/600x400/000/fff&text=B",
+                  "https://dummyimage.com/600x400/000/fff&text=C",
+                  "https://dummyimage.com/600x400/000/fff&text=D"
+                ],
+                "correctAnswer": "1",
+                "messageForCorrectAnswer": "Correct answer. Good job.",
+                "messageForIncorrectAnswer": "Incorrect answer. Please try again.",
+                "explanation": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                "point": "20"
+              },
+              {
+                "question": "What are the advantages of React JS?",
+                "questionType": "text",
+                "answerSelectionType": "multiple",
+                "answers": [
+                  "React can be used on client and as well as server side too",
+                  "Using React increases readability and makes maintainability easier. Component, Data patterns improves readability and thus makes it easier for manitaining larger apps",
+                  "React components have lifecycle events that fall into State/Property Updates",
+                  "React can be used with any other framework (Backbone.js, Angular.js) as it is only a view layer"
+                ],
+                "correctAnswer": [1, 2, 4],
+                "messageForCorrectAnswer": "Correct answer. Good job.",
+                "messageForIncorrectAnswer": "Incorrect answer. Please try again.",
+                "explanation": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                "point": "20"
+              }
+            ]
+          }
+        },
+        {
+          "Part 2": {
+            "quizTitle": "Javascript Quiz Component Demo",
+            "timeAlloted": 30,
+            "quizSynopsis": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim",
+            "questions": [
+              {
+                "question": "How can you access the state of a component from inside of a member function?",
+                "questionType": "text",
+                "answerSelectionType": "single",
+                "answers": [
+                  "this.getState()",
+                  "this.prototype.stateValue",
+                  "this.state",
+                  "this.values"
+                ],
+                "correctAnswer": "3",
+                "messageForCorrectAnswer": "Correct answer. Good job.",
+                "messageForIncorrectAnswer": "Incorrect answer. Please try again.",
+                "explanation": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                "point": "20"
+              },
+              {
+                "question": "ReactJS is developed by _____?",
+                "questionType": "text",
+                "answerSelectionType": "single",
+                "answers": ["Google Engineers", "Facebook Engineers"],
+                "correctAnswer": "2",
+                "messageForCorrectAnswer": "Correct answer. Good job.",
+                "messageForIncorrectAnswer": "Incorrect answer. Please try again.",
+                "explanation": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                "point": "20"
+              },
+              {
+                "question": "ReactJS is an MVC based framework?",
+                "questionType": "text",
+                "answerSelectionType": "single",
+                "answers": ["True", "False"],
+                "correctAnswer": "2",
+                "messageForCorrectAnswer": "Correct answer. Good job.",
+                "messageForIncorrectAnswer": "Incorrect answer. Please try again.",
+                "explanation": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                "point": "10"
+              },
+              {
+                "question": "Which of the following concepts is/are key to ReactJS?",
+                "questionType": "text",
+                "answerSelectionType": "single",
+                "answers": [
+                  "Component-oriented design",
+                  "Event delegation model",
+                  "Both of the above"
+                ],
+                "correctAnswer": "3",
+                "messageForCorrectAnswer": "Correct answer. Good job.",
+                "messageForIncorrectAnswer": "Incorrect answer. Please try again.",
+                "explanation": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                "point": "30"
+              },
+              {
+                "question": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
+                "questionType": "photo",
+                "answerSelectionType": "single",
+                "answers": [
+                  "https://dummyimage.com/600x400/000/fff&text=A",
+                  "https://dummyimage.com/600x400/000/fff&text=B",
+                  "https://dummyimage.com/600x400/000/fff&text=C",
+                  "https://dummyimage.com/600x400/000/fff&text=D"
+                ],
+                "correctAnswer": "1",
+                "messageForCorrectAnswer": "Correct answer. Good job.",
+                "messageForIncorrectAnswer": "Incorrect answer. Please try again.",
+                "explanation": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                "point": "20"
+              },
+              {
+                "question": "What are the advantages of React JS?",
+                "questionType": "text",
+                "answerSelectionType": "multiple",
+                "answers": [
+                  "React can be used on client and as well as server side too",
+                  "Using React increases readability and makes maintainability easier. Component, Data patterns improves readability and thus makes it easier for manitaining larger apps",
+                  "React components have lifecycle events that fall into State/Property Updates",
+                  "React can be used with any other framework (Backbone.js, Angular.js) as it is only a view layer"
+                ],
+                "correctAnswer": [1, 2, 4],
+                "messageForCorrectAnswer": "Correct answer. Good job.",
+                "messageForIncorrectAnswer": "Incorrect answer. Please try again.",
+                "explanation": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                "point": "20"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "packageInformation": [
+    {
+      "Everything you wanna know about react": [
+        {
+          "Introduction to react": [
+            {
+              "ReactJS Basics": "https://www.youtube.com/watch?v=JPT3bFIwJYA&list=PL55RiY5tL51oyA8euSROLjMFZbXaV7skS"
+            },
+            {
+              "Setting up project environment": "https://www.youtube.com/watch?v=uextYhQGP6k&list=PL55RiY5tL51oyA8euSROLjMFZbXaV7skS&index=2"
+            }
+          ]
+        },
+        {
+          "Components in react": [
+            {
+              "First Component": "https://www.youtube.com/watch?v=G40iHC-h0c0&list=PL55RiY5tL51oyA8euSROLjMFZbXaV7skS&index=4"
+            },
+            {
+              "Multiple Components": "https://www.youtube.com/watch?v=9wK4gHoOh1g&list=PL55RiY5tL51oyA8euSROLjMFZbXaV7skS&index=5"
+            },
+            {
+              "Dynamic Data": "https://www.youtube.com/watch?v=1JZEmYwRGoU&list=PL55RiY5tL51oyA8euSROLjMFZbXaV7skS&index=6"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "FAQs": [
+    {
+      "subscriptions": [
+        "First question about subscription#First answer about subscription",
+        "Second question about subscription#Second answer about subscription"
+      ],
+      "renewal": [
+        "First question about renewal#First answer about renewal",
+        "Second question about renewal#Second answer about renewal"
+      ]
     }
   ]
 }
